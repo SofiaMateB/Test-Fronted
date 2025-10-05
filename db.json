@@ -1,0 +1,28 @@
+{
+  "users": [
+    { "id": 1, "email": "sofi@example.com", "password": "123456", "name": "Sofía" },
+    { "id": 2, "email": "ana@example.com", "password": "123456", "name": "Ana" }
+  ]
+  {
+  "countries": [
+    { "id": 1, "name": "Colombia" },
+    { "id": 2, "name": "México" }
+  ],
+  "cities": [
+    { "id": 1, "name": "Bogotá", "countryId": 1 },
+    { "id": 2, "name": "Medellín", "countryId": 1 },
+    { "id": 3, "name": "Ciudad de México", "countryId": 2 }
+  ],
+  "offices": [
+    { "id": 1, "name": "Oficina A", "cityId": 1 },
+    { "id": 2, "name": "Oficina B", "cityId": 2 },
+    { "id": 3, "name": "Oficina C", "cityId": 3 }
+  ],
+  "sales": [
+    { "id": 1, "officeId": 1, "month": "2025-01", "amount": 12000 },
+    { "id": 2, "officeId": 1, "month": "2025-02", "amount": 15000 },
+    { "id": 3, "officeId": 2, "month": "2025-01", "amount": 18000 },
+    { "id": 4, "officeId": 3, "month": "2025-02", "amount": 10000 }
+  ]
+}
+}
