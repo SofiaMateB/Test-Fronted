@@ -21,7 +21,10 @@ const countrySales = countries.map(c => {
     datasets: [{
       label: "Ventas por país",
       data: countrySales,
-      backgroundColor: ["#4ACF76", "#007A33", "#3AC953", "#70E000"],
+      backgroundColor: [
+        "#4ACF76", "#3B82F6", "#F59E0B", "#F97316"
+      ],
+      borderWidth: 1,
       hoverOffset: 20
     }]
   };

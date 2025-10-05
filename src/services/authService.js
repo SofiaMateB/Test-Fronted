@@ -4,6 +4,7 @@ export async function loginUser(email, password) {
   if (users.length > 0) {
     const fakeToken = "FAKE-TOKEN-12345";
     localStorage.setItem("token", fakeToken);
+    localStorage.setItem("Usuario", email)
     return { token: fakeToken, user: users[0] };
   } else {
         return { message: "Credenciales Invalidas"};

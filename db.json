@@ -5,26 +5,43 @@
   ],
   "countries": [
     { "id": 1, "name": "Colombia" },
-    { "id": 2, "name": "México" }
+    { "id": 2, "name": "México" },
+    { "id": 3, "name": "Perú" },
+    { "id": 4, "name": "Chile" }
   ],
   "cities": [
     { "id": 1, "name": "Bogotá", "countryId": 1 },
     { "id": 2, "name": "Medellín", "countryId": 1 },
-    { "id": 3, "name": "Ciudad de México", "countryId": 2 }
+    { "id": 3, "name": "Cali", "countryId": 1 },
+    { "id": 4, "name": "Ciudad de México", "countryId": 2 },
+    { "id": 5, "name": "Guadalajara", "countryId": 2 },
+    { "id": 6, "name": "Lima", "countryId": 3 },
+    { "id": 7, "name": "Arequipa", "countryId": 3 },
+    { "id": 8, "name": "Santiago", "countryId": 4 }
   ],
   "offices": [
     { "id": 1, "name": "Oficina A", "cityId": 1 },
     { "id": 2, "name": "Oficina B", "cityId": 2 },
-    { "id": 3, "name": "Oficina C", "cityId": 3 }
+    { "id": 3, "name": "Oficina C", "cityId": 3 },
+    { "id": 4, "name": "Oficina D", "cityId": 4 },
+    { "id": 5, "name": "Oficina E", "cityId": 5 },
+    { "id": 6, "name": "Oficina F", "cityId": 6 },
+    { "id": 7, "name": "Oficina G", "cityId": 7 },
+    { "id": 8, "name": "Oficina H", "cityId": 8 }
   ],
   "sales": [
-   { "id": 1, "officeId": 1, "month": "2025-01", "amount": 12000 },
+    { "id": 1, "officeId": 1, "month": "2025-01", "amount": 12000 },
     { "id": 2, "officeId": 1, "month": "2025-02", "amount": 15000 },
     { "id": 3, "officeId": 2, "month": "2025-01", "amount": 18000 },
     { "id": 4, "officeId": 2, "month": "2025-02", "amount": 20000 },
     { "id": 5, "officeId": 3, "month": "2025-01", "amount": 10000 },
-    { "id": 6, "officeId": 3, "month": "2025-02", "amount": 12000 },
-    { "id": 7, "officeId": 4, "month": "2025-01", "amount": 9000 },
-    { "id": 8, "officeId": 4, "month": "2025-02", "amount": 15000 }
+    { "id": 6, "officeId": 3, "month": "2025-02", "amount": 14000 },
+    { "id": 7, "officeId": 4, "month": "2025-01", "amount": 22000 },
+    { "id": 8, "officeId": 5, "month": "2025-01", "amount": 17000 },
+    { "id": 9, "officeId": 6, "month": "2025-02", "amount": 19000 },
+    { "id": 10, "officeId": 7, "month": "2025-01", "amount": 16000 },
+    { "id": 11, "officeId": 8, "month": "2025-02", "amount": 21000 },
+    { "id": 12, "officeId": 4, "month": "2025-02", "amount": 25000 }
   ]
+
 }
