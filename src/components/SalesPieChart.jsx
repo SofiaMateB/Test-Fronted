@@ -1,42 +1,30 @@
-import { Bar, Line, Pie } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
+import { Pie } from "react-chartjs-2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend
-);
+ChartJS.register(ArcElement, Tooltip, Legend);
+
 export default function SalesPieChart({ sales, countries, cities, offices }) {
+const countrySales = countries.map(c => {
+  // Primero obtener las ciudades de ese país
+  const countryCities = cities.filter(city => city.countryId === c.id).map(city => city.id);
+
+  // Luego obtener las oficinas dentro de esas ciudades
+  const countryOffices = offices.filter(o => countryCities.includes(o.cityId)).map(o => o.id);
+
+  // Finalmente sumar las ventas de esas oficinas
+  return sales
+    .filter(s => countryOffices.includes(s.officeId))
+    .reduce((acc, cur) => acc + cur.amount, 0);
+});
   const data = {
     labels: countries.map(c => c.name),
     datasets: [{
       label: "Ventas por país",
-      data: countries.map(c => {
-        const cityIds = cities.filter(ci => ci.countryId === c.id).map(ci => ci.id);
-        const officeIds = offices.filter(o => cityIds.includes(o.cityId)).map(o => o.id);
-        return sales.filter(s => officeIds.includes(s.officeId))
-                    .reduce((a, b) => a + b.amount, 0);
-      }),
-      backgroundColor: ["#3b82f6", "#10b981", "#f59e0b", "#ef4444"],
+      data: countrySales,
+      backgroundColor: ["#4ACF76", "#007A33", "#3AC953", "#70E000"],
+      hoverOffset: 20
     }]
   };
-  const options = { responsive: true, plugins: { legend: { position: "bottom" } } };
-  return <Pie data={data} options={options} />;
+
+  return <Pie data={data} options={{ responsive: true }} />;
 }

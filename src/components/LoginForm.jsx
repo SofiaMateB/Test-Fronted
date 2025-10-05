@@ -30,14 +30,14 @@ const LoginForm = ({ onSubmit, err, succ }) => {
           <div className="w-1/2 bg-gradient-to-br from-[#4ACF76] to-[#007A33] text-white flex flex-col justify-center items-center p-10 relative">
             <div className="text-center">
               {/* Logo IKUSI */}
-             <div className="relative mb-8 -mt-8 flex justify-start items-start">
-  <div className="absolute bg-white/80 rounded-full w-10 h-10"></div>
-  <img
-    src="https://www.ikusi.com/wp-content/uploads/2025/05/logo-ikusi-01.svg"
-    alt="Ikusi Logo"
-    className="h-12 relative"
-  />
-</div>
+              <div className="relative mb-8 -mt-8 flex justify-start items-start">
+                <div className="absolute bg-white/80 rounded-full w-10 h-10"></div>
+                <img
+                  src="https://www.ikusi.com/wp-content/uploads/2025/05/logo-ikusi-01.svg"
+                  alt="Ikusi Logo"
+                  className="h-12 relative"
+                />
+              </div>
 
               {/* Shield SVG */}
               <div className="flex items-center justify-center ">
@@ -49,11 +49,11 @@ const LoginForm = ({ onSubmit, err, succ }) => {
                   stroke="#3AC953"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                    className="mb-2 transition-colors duration-300 hover:stroke-[#007A33]">  
-              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                  className="mb-2 transition-colors duration-300 hover:stroke-[#007A33]">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
 
                 </svg>
-          
+
 
 
               </div>
