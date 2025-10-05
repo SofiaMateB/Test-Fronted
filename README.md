@@ -4,24 +4,43 @@ Este proyecto es un **dashboard interactivo** desarrollado con **React** y **Tai
 
 ## 📂 Estructura del proyecto
 src/
+
 ├─ components/
+
 │ ├─ KPIS.jsx
+
 │ ├─ Filters.jsx
+
 │ ├─ Sidebar.jsx
+
 │ ├─ TopBar.jsx
+
 │ ├─ SalesBarChart.jsx
+
 │ ├─ SalesLineChart.jsx
+
 │ ├─ SalesPieChart.jsx
+
 │ ├─ SalesDoughnutChart.jsx
+
 │ └─ SalesTable.jsx
+
 ├─ pages/
+
 │ ├─ Login.jsx
+
 │ └─ Dashboard.jsx
+
 ├─ services/
+
 │ ├─ authService.js
+
 │ └─ dataService.js
+
 ├─ App.jsx
+
 └─ index.jsx
+
 ## 🚀 Tecnologías
 
 - React 19
@@ -39,7 +58,6 @@ src/
   - **Pie Chart** → Ventas por país/ciudad.
   - **Doughnut Chart** → Distribución de ventas por ciudad.
 - Tabla resumen de ventas.
-- Colores corporativos de **Ikusi**, con diseño moderno y profesional
 
 ## 💾 Instalación
 
