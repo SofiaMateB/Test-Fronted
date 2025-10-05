@@ -2,45 +2,6 @@
 
 Este proyecto es un **dashboard interactivo** desarrollado con **React** y **Tailwind CSS** que permite visualizar indicadores de ventas jerárquicamente (País > Ciudad > Oficina) usando **JSON Server** como backend simulado
 
-## 📂 Estructura del proyecto
-src/
-
-├─ components/
-
-│ ├─ KPIS.jsx
-
-│ ├─ Filters.jsx
-
-│ ├─ Sidebar.jsx
-
-│ ├─ TopBar.jsx
-
-│ ├─ SalesBarChart.jsx
-
-│ ├─ SalesLineChart.jsx
-
-│ ├─ SalesPieChart.jsx
-
-│ ├─ SalesDoughnutChart.jsx
-
-│ └─ SalesTable.jsx
-
-├─ pages/
-
-│ ├─ Login.jsx
-
-│ └─ Dashboard.jsx
-
-├─ services/
-
-│ ├─ authService.js
-
-│ └─ dataService.js
-
-├─ App.jsx
-
-└─ index.jsx
-
 ## 🚀 Tecnologías
 
 - React 19
